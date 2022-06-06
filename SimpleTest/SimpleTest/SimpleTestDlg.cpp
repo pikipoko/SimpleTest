@@ -66,6 +66,7 @@ BEGIN_MESSAGE_MAP(CSimpleTestDlg, CDialogEx)
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
 	ON_BN_CLICKED(IDC_BUTTON1, &CSimpleTestDlg::OnBnClickedButton1)
+	//ON_LBN_SELCHANGE(IDC_LIST1, &CSimpleTestDlg::OnLbnSelchangeList1)
 END_MESSAGE_MAP()
 
 
@@ -158,7 +159,14 @@ HCURSOR CSimpleTestDlg::OnQueryDragIcon()
 
 void CSimpleTestDlg::OnBnClickedButton1()
 {
-	AfxMessageBox(_T("Button clicked!"));
+	//AfxMessageBox(_T("Button clicked!"));
+	int index;
 
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+}
+
+
+void CSimpleTestDlg::OnLbnSelchangeList1()
+{
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 }
